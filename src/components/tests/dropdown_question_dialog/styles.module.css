@@ -1,0 +1,49 @@
+.dialogContainer {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sectionTitle {
+    background-color: #ffd32b;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.dialogRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+
+.dialogSpeaker {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+}
+
+.dialogQuestion {
+    flex: 1;
+    font-size: 1em;
+    color: #555;
+}
+
+.dialogQuestion select {
+    padding: 5px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+
+@media (max-width: 480px) {
+    .sectionTitle {
+        font-size: 1.2em;
+    }
+
+    .dialogRow {
+        font-size: 1em;
+    }
+}

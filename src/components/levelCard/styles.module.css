@@ -1,0 +1,163 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffd32b;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius:10px;
+    padding: 10px 50px;
+    border: 7px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+.english {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.english img {
+    width: 70px;
+    margin: -40px 0;
+    transform: rotate(90deg);
+}
+
+.ielts {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.btn {
+    width: 20%;
+    background-color: black;
+    padding: 20px;
+    font-size: 40px;
+    text-decoration: none;
+    color: #ffd32b;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #c39e12;
+    color: black;
+}
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: row;
+        width: 80%;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .english {
+        width: 30%;
+    }
+
+    .english img {
+        width: 60px;
+        height: auto;
+    }
+
+    .btn {
+        width: 20%;
+        padding: 15px;
+        font-size: 30px;
+    }
+
+    .ielts {
+        font-size: 2rem;
+        width: 60%;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: row;
+        width: 80%;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .english {
+        width: 50%;
+        gap: 20px;
+    }
+
+    .english img {
+        width: 40px;
+    }
+
+    .english h1 {
+        font-size: 1.5rem;
+        margin-bottom: -20px;
+    }
+
+    .ielts {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .btn {
+        width: 60%;
+        padding: 5px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 540px) {
+    .container {
+        width: 90%;
+        gap: 15px;
+        padding: 15px;
+        border: 3px solid black;
+    }
+
+    .english {
+        width: 25%;
+        gap: 5px;
+        margin: 0 0 15px;
+    }
+
+    .english img {
+        width: 15px;
+        margin: -10px 0;
+        height: auto;
+    }
+
+    .english h1 {
+        font-size: 0.5rem;
+    }
+
+    .ielts {
+        width: 50%;
+        font-size: 1rem;
+    }
+
+    .btn {
+        border-radius: 4px;
+        width: 25%;
+        padding: 2px;
+        font-size: 8px;
+    }
+}

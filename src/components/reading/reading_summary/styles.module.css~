@@ -1,0 +1,27 @@
+.container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    width: 100px; /* Можно настроить ширину по необходимости */
+    text-align: center;
+    margin: 5px; /* Добавляет отступы для лучшего восприятия */
+}
+
+.input::placeholder {
+    color: #aaa;
+}
+
+.input:focus {
+    border-bottom: 1px solid #007bff; /* Опционально: подсветка при фокусе */
+}

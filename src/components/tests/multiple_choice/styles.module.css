@@ -1,0 +1,67 @@
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.questionContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два столбца */
+    gap: 20px; /* Отступы между карточками */
+}
+
+.multiple_choice {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.questionBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.questionBox span {
+    margin-top: -7px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.sectionTitle {
+    background-color: #ffd32b;
+    padding: 10px;
+}
+
+.dropdown_question {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.labelQuestion {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+@media (max-width: 480px) {
+
+    .sectionTitle {
+        font-size: 1.2em;
+    }
+
+    .gridContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
