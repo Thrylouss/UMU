@@ -1,0 +1,107 @@
+/* General styles for the SpeakingSection component */
+.speakingSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f7f9fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dialogue section styling */
+.dialogue {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    
+}
+
+.dialogue p {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.speakerA {
+    background-color: #e6f7ff;
+    color: #0050b3;
+}
+
+.speakerB {
+    background-color: #fff1f0;
+    color: #a8071a;
+}
+
+/* Audio controls section */
+.audioControls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.audioControls .icon {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    background-color: #ffd32b;
+    border-radius: 50%;
+}
+
+.audioControls .icon:hover {
+    transform: scale(1.1);
+}
+
+.audioPlayer {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Recorded text section */
+.recordedText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recordedText h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #444;
+}
+
+.textArea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: none;
+    color: #333;
+}
+
+/* Action buttons */
+.actionButtons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+.actionButtons .icon {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    background-color: #ffd32b;
+    border-radius: 50%;
+}
+
+.actionButtons .icon:hover {
+    transform: scale(1.1);
+}

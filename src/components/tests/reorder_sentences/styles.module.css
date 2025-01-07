@@ -1,0 +1,55 @@
+.reorderContainer {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sectionTitle {
+    background-color: #ffd32b;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.questionBlock {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.correctSentence {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.droppableArea {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    min-height: 50px;
+}
+
+.draggableWord {
+    padding: 5px 10px;
+    background-color: #ffd32b;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    cursor: grab;
+    user-select: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 480px) {
+    .sectionTitle {
+        font-size: 1.2em;
+    }
+}

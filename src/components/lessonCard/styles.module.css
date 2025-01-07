@@ -1,0 +1,148 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 50px;
+    align-items: center;
+    background-color: #ffd32b;
+}
+
+.listItemHead {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 30px;
+    border-right: 5px solid black;
+    text-align: center;
+}
+
+.img {
+    width: 20%;
+}
+
+.listItemHead h2 {
+    width: 70%;
+}
+
+.title {
+    font-size: 60px;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #e6e6e6;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease; /* Smooth hover effect */
+}
+
+.listItem:hover {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px black;
+}
+
+
+
+.listItemDesc {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    width: 70%;
+}
+
+.listItemTitle {
+    font-size: 1.2em;
+}
+
+.lessonDesc {
+    font-size: 0.8em;
+    color: grey;
+}
+
+@media (max-width: 1470px) {
+    .listItem {
+        width: 65%;
+    }
+
+    .listItemHead {
+        font-size: 1rem;
+    }
+    .listItemDesc {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .listItem {
+        width: 75%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .listItem {
+        width: 85%;
+    }
+
+    .listItemHead {
+        font-size: 0.7rem;
+    }
+
+    .img {
+        width: 30px;
+    }
+    .listItemHead h2 {
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .listItemHead {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 25%;
+        font-size: 0.6rem;
+    }
+
+    .listItemDesc {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .listItem {
+        width: 90%;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .listItemHead {
+        width: 25%;
+        border-right: 1px solid black;
+        font-size: 0.5rem;
+    }
+
+    .listItemDesc {
+        width: 75%;
+        font-size: 0.7rem;
+    }
+}

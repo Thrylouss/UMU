@@ -1,0 +1,109 @@
+/* styles.module.css */
+
+/* Базовые стили */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffd32b;
+}
+
+.container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: -150px auto 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form input {
+    padding: 20px 45px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.form button {
+    padding: 20px 45px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: black;
+    color: #ffd32b;
+}
+
+.form button:hover {
+    background-color: #c39e12;
+    color: black;
+    cursor: pointer;
+}
+
+.img {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* 1) Адаптация для экранов до 1200px */
+@media (max-width: 1200px) {
+    .container {
+        width: 80%;
+        gap: 40px;
+        margin: -120px auto 0;
+    }
+    .form input,
+    .form button {
+        font-size: 1.4rem;
+    }
+    .img {
+        width: 50%;
+    }
+}
+
+/* 2) Адаптация для экранов до 780px */
+@media (max-width: 780px) {
+    .container {
+        width: 90%;
+        gap: 30px;
+        margin: -100px auto 0;
+    }
+    .form input,
+    .form button {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+    }
+    .img {
+        width: 60%;
+    }
+}
+
+/* 3) Адаптация для экранов до 480px */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        gap: 20px;
+        margin: -80px auto 0;
+    }
+    .form input,
+    .form button {
+        font-size: 1.1rem;
+        padding: 15px 20px;
+    }
+    .img {
+        width: 70%;
+    }
+}

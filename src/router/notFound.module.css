@@ -1,0 +1,35 @@
+.notFoundPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.notFoundTitle {
+    font-size: 72px;
+    margin-bottom: 16px;
+    color: #ff6347; /* Пример цвета */
+}
+
+.notFoundText {
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+.notFoundLink {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.not-found-link:hover {
+    background-color: #0056b3;
+}
